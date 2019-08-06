@@ -135,7 +135,7 @@ Logger
 StatTool
 
 首先您要做的是在枚举类Constants组件中的ServiceTypeNames.py内定义您所想要添加的服务：
-'''
+'''python
 serviceName = 'newService'
 '''
 这一步可以让您给您想要添加的功能起一个统一的名称来全局调用。同时在启动Gensis.py的时候，您需要将引号内的名称作为启动参数填入：
@@ -145,7 +145,7 @@ Python Gensis.py newService
 ### 添加一个新的爬虫组件
 爬虫组件为一项服务的主要组件，所有其他的组件都是围绕起爬虫组件来执行的。
 首先，在Managers组件中的SpiderManager.py的crwal()方法内定义一个执行入口
-'''
+'''python
 if self.service == self.serviceConstants.newServiceName:
   return self.runNewSpider()
 '''
@@ -167,14 +167,14 @@ Others：其他自定义属性
 
 在Package组件中定义后，还需要在Tools组件中的PackageFactory.py内添加两个包裹的生产情况：
 在producePacakge()方法内添加
-'''
+'''python
 if service == self.serviceConstants.newService:
   return newPackage()
 '''
 来新增一个创建新任务包裹的方法
 
 在regeneratePackageFromResultPackage()方法内添加
-'''
+'''python
 if service == self.serviceConstants.newService:
   return newPackage(resultPackage)
 '''
