@@ -60,20 +60,22 @@ python x.py servicename ip port
 * PORT：您主节点运行的本机端口。一般是在XXXX-XXXX之间。
 
 对于主节点，执行程序名为
+```
 **Gensis.py**
-
+```
 对于子节点，执行程序名为
+```
 **GensisWorker.py**
-
+```
 以上程序名用于替换执行指令中的**x.py**。
 在使用**Gensis**时，如需使用分布式功能，可将子节点程序可复制到多台主机，在指定好主节点的IP地址以及端口后独立运行。
 
 参考运行实例：
-主节点
+* 主节点
 ```
 python Gensis.py serviceName
 ```
-子节点
+* 子节点
 ```
 python GensisWorker.py serviceName
 ```
