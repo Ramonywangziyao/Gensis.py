@@ -31,12 +31,12 @@ https://myiphide.com/
 #### 在安装好所需的所有内容后：
 
 使用以下三种方式进行安装
-1.（推荐）导航到您想下载**Gensis.py**的文件夹，在Windows的CMD命令提示符界面或Mac OS的Terminal下输入
+1. （推荐）导航到您想下载**Gensis.py**的文件夹，在Windows的CMD命令提示符界面或Mac OS的Terminal下输入
 ```
 git clone https://github.com/Ramonywangziyao/Gensis.py.git
 ```
 
-2.下载**Gensis.py Github**界面的Zip打包文件到本地，并解压
+2. 下载**Gensis.py Github**界面的Zip打包文件到本地，并解压
 
 3. 点击界面上的**Open in Desktop**进行下载（如已安装Github Desktop桌面应用）
 
