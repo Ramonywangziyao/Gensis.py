@@ -47,7 +47,7 @@ git clone https://github.com/Ramonywangziyao/Gensis.py.git
 
 **Gensis.py**是整个框架的总称，在其内部拥有**Gensis-Master**和**Gensis-Worker**两个相对独立的程式。**Gensis-Master**为主节点，用于执行指定的服务，负责监听用于接收子节点结果的端口，启动分发/接受/分析/储存数据的通道以及主节点所用的爬虫管理和启动。而**Gensis-Worker**在执行对应的服务后，则负责从主节点所映射的任务池里抓取任务，在完成后负责把结果上传到结果池，以供主节点进行进一步分析和其他动作。对于主节点和子节点的详解请查看组件部分的主/子节点对应段落。
 
-# 起步 - 运行
+### 起步 - 运行
 
 **Gensis.py**的运行十分的简单，无论是主节点还是子节点，都可在Windows的CMD命令提示符或Mac OS的Terminal输入以下指令执行：
 ```
