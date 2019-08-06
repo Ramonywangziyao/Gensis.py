@@ -1,4 +1,4 @@
-# Gensis.py 开发及使用文档
+# Gensis.py 使用及开发文档
 A distributed crawler framework for Steam
 
 # 介绍
