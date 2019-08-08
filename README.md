@@ -131,7 +131,7 @@ python GensisWorker.py serviceName
 # 开发
 
 ### 添加一个新的服务
-在Gensis中，一个服务**（Service）**意味着一个您所期望的功能模块。一个服务中通常包含了以下主要组件：
+在Gensis中，一个服务（Service）意味着一个您所期望的功能模块。一个服务中通常包含了以下主要组件：
 * Spider
 * Package
 * Analyzer
