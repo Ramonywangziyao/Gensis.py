@@ -153,7 +153,7 @@ Python Gensis.py newService
 首先，在**Managers**组件中的**SpiderManager.py**的 **crwal()** 方法内定义一个执行入口
 ```python
 if self.service == self.serviceConstants.newServiceName:
-  return self.runNewSpider()
+	return self.runNewSpider()
 ```
 该入口确保了SpiderManager.py能够根据您所指向的服务来执行对应的爬虫。
 
@@ -175,18 +175,28 @@ if self.service == self.serviceConstants.newServiceName:
 在 **producePacakge()** 方法内添加
 ```python
 if service == self.serviceConstants.newService:
-  return newPackage()
+	return newPackage()
 ```
 来新增一个创建新任务包裹的方法
 
 在 **regeneratePackageFromResultPackage()** 方法内添加
 ```python
 if service == self.serviceConstants.newService:
-  return newPackage(resultPackage)
+	return newPackage(resultPackage)
 ```
 来新增一个从结果包裹创建任务包裹的方法
 ***
 ### 添加一个新服务的数据分析组件
+一个新服务的数据分析组件用于分析由子节点所传到主节点的结果包裹的内容，包括包裹的重新解包，打包，以及统计工具**StatTool**的使用。
+首先，在**Managers**组件中的**AnalyzeManager.py**内的 **__init__()** 方程中定义：
+```python
+if self.service == self.serviceConstants.newService:
+	self.analyzer = newServiceAnalyzer()
+```
+来新增一个创建您所定义的新分析类的方法
+
+然后您需要在**Analyzers**组件中添加一个您自定义的针对您所想要使用的服务的新的分析类，继承一个接口**AnalyzerInterface**，并且实现其中的抽象方法。
+
 
 ### 添加一个新服务的日志管理组件
 
