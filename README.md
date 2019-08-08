@@ -187,7 +187,7 @@ if service == self.serviceConstants.newService:
 来新增一个从结果包裹创建任务包裹的方法
 ***
 ### 添加一个新服务的数据分析组件
-一个新服务的数据分析组件用于分析由子节点所传到主节点的结果包裹的内容，包括包裹的重新解包，打包，以及统计工具**StatManager**的使用。
+一个新服务的数据分析组件用于分析由子节点所传到主节点的结果包裹的内容，包括包裹的重新解包，打包，以及统计工具**StatTool**的使用。
 首先，在**Managers**组件中的**AnalyzeManager.py**内的 **__init__()** 方程中定义：
 ```python
 if self.service == self.serviceConstants.newService:
