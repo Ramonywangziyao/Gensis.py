@@ -199,7 +199,15 @@ if self.service == self.serviceConstants.newService:
 
 
 ### 添加一个新服务的日志管理组件
+一个新服务的日志管理组件用于对**Gensis**运行日志的读和写，通常为.txt或.csv格式。
+首先，在**Managers**组件中的**LogManager.py**内的 **__init__()** 方程中定义：
+```python
+if self.service == self.serviceConstants.newService:
+	self.logger = newLogger()
+```
+来新增一个创建您所定义的新日志类的方法
 
+然后您在**Loggers**组件中添加一个您自动逸的针对您想要使用的服务的新的日志类，继承一个接口**LoggerInterface**，并实现其中的抽象方法。
 ### 添加一个新的接口
 
 ### 添加一个新的统计工具
