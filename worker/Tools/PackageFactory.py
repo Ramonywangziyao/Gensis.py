@@ -1,3 +1,15 @@
+'''
+PackageFactory.py
+Gensis
+
+Tested with Python 3.7.4
+Version 1.0.0 - tonywangziyao@gmail.com
+
+Created by Ziyao Wang on 07/01/2019
+Copyright @ 2019 Ziyao Wang. All right reserved.
+'''
+
+
 import sys
 sys.path.append('..')
 from Packages.UsernetPackage import UsernetTaskPackage
@@ -7,8 +19,8 @@ from Constants.ServiceConstants import ServiceConstants
 class PackageFactory:
 
     def __init__(self):
-        self.serviceConstants = ServiceConstants()
+        self.snames = ServiceConstants()
 
     def producePackage(self, service, data):
-        if service == self.serviceConstants.usernetServiceName:
-            return UsernetResultPackage(data)
+        if service == self.snames.default:
+            return None

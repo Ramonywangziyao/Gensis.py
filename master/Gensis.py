@@ -33,13 +33,20 @@ if __name__ == '__main__':
     wait_queue = Queue()
 
 
-    # usernet service start point
-    if sys.argv is None or len(sys.argv) == 1:
+    # service start point
+    if sys.argv is None or len(sys.argv) == 4:
         sys.exit('[GS] Error: you must type a service para to start AirMaster.')
 
     service = sys.argv[1]
+    ip = sys.argv[2]
+    port_number = sys.argv[3]
+    authkey = sys.argv[4]
 
-    manager = GensisManager(service)
+    if service is None or ip is None or port_number is None or authkey is None:
+        sys.exit('[GS] Error: para not typed correctly.')
+
+
+    manager = GensisManager(ip, port_number, authkey, service)
     master = manager.start_gensisManager_master(task_queue, result_queue)
 
     # init processes

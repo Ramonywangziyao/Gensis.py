@@ -1,11 +1,22 @@
+'''
+GensisWorkerManager.py
+Gensis
+
+Tested with Python 3.7.4
+Version 1.0.0 - tonywangziyao@gmail.com
+
+Created by Ziyao Wang on 07/01/2019
+Copyright @ 2019 Ziyao Wang. All right reserved.
+'''
+
+
 from multiprocessing.managers import BaseManager
 
-
 class GensisWorkerManager(object):
-    def __init__(self):
-        self.server_addr = '192.168.1.118'
-        self.port = 10001
-        self.authkey = 'pathea'
+    def __init__(self, ip, port_number, authkey):
+        self.server_addr = ip
+        self.port = port_number
+        self.authkey = authkey
 
     def initBaseManager(self):
         BaseManager.register('get_task_queue')

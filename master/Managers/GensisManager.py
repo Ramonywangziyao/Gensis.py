@@ -193,11 +193,13 @@ class GensisManager(object):
         packed_res = dict()
         filename = 'breakpoint_' + str(self.service) + '.txt'
         data = self.logManager.loadBreakpoint(filename)
+
         # no breakpoint,  look for logged comments
         if data == None:
             # wrapped data
             filename = 'originUrls_' + str(self.service) + '.txt'
             urls_data = self.logManager.loadUrls(filename)
+
             if urls_data == None:
                 spiderManager = SpiderManager(self.service)
                 crawled_data = spiderManager.crawl()
