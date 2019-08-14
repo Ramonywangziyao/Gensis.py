@@ -227,12 +227,12 @@ if self.service == self.serviceConstants.newService:
 Gensis的研发出自于重庆帕斯亚科技有限公司的团队。这里展示其主要研发者信息
 
 Ziyao Wang
-Creator @ Gensis.py
-Location: New York, NY, USA
-Language: 中文 - English
-Blog: https://www.ziyaowang.com/
-Github: https://github.com/Ramonywangziyao
-Email: zw593@nyu.edu
+- Creator @ Gensis.py
+- Location: New York, NY, USA
+- Language: 中文 - English
+- Blog: https://www.ziyaowang.com/
+- Github: https://github.com/Ramonywangziyao
+- Email: zw593@nyu.edu
 
 
 
