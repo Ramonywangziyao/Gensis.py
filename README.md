@@ -51,7 +51,7 @@ git clone https://github.com/Ramonywangziyao/Gensis.py.git
 
 **Gensis.py**的运行十分的简单，无论是主节点还是子节点，都可在Windows的CMD命令提示符或Mac OS的Terminal输入以下指令执行：
 ```
-python x.py servicename ip port   
+python x.py servicename ip port authkey
 ```
 * Servicename：您想执行的已开发的服务的指定名称，具体内容将在‘添加一个新服务’部分进行详解。但是请注意，**Servicename**是必须输入的一个执行参数。如果不输入该执行参数或输入了错误或不存在的服务名称，将导致**Gensis**无法执行。您必须选用一个服务来执行**Gensis**。
 
